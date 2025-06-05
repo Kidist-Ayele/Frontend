@@ -1,0 +1,107 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  padding: 30px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.styled-search-box {
+  margin-bottom: 20px;
+}
+
+.styled-search-box input[type="text"] {
+  width: 100%;
+  padding: 10px 12px 10px 36px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-image: url('icons/search.svg');
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: 10px center;
+}
+
+button {
+  padding: 10px 15px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #eee;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li span {
+  flex: 1;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+li input[type="text"] {
+  flex: 1;
+  padding: 6px;
+}
+
+li .actions button {
+  margin-left: 5px;
+  background: #888;
+}
+
+li .actions .delete {
+  background: red;
+}
+
+li .actions .edit {
+  background: orange;
+}
+
+li .actions button:hover {
+  opacity: 0.8;
+  color: #fff;
+}
